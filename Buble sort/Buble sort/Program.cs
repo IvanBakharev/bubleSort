@@ -1,8 +1,9 @@
 ﻿
-int[] numbers = new int[42];
+int[] numbers = new int[40];
 Random rand = new Random();
 for (int i = 0; i < numbers.Length; i++)
-    numbers[i] = rand.Next();
+    numbers[i] = rand.Next(1, 100);
+Thread.Sleep(300);
 
 int temp;
 
@@ -23,3 +24,4 @@ for (int i = 0; i < numbers.Length; i++)
 {
     Console.WriteLine(numbers[i]);
 }
+
